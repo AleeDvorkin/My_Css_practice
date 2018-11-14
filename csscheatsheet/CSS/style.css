@@ -1,0 +1,247 @@
+/*
+*{  
+	margin: 0;
+	padding: 0;
+} 
+*/
+
+body{
+	background-color:#f4f4f4;
+	color:black;
+
+	font-family: Arial, Helvetica, Sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	/*you can also do this inshorter way*/
+	font: normal 16px Arial, Helvetica, Sans-serif;
+
+
+	line-height: 1.6em;
+	margin: 0;
+}
+
+a{
+	text-decoration: none;
+	color:#000;
+}
+
+a:hover{
+	color:red;  /*thisif you point the mouse into categori it will light up red*/
+}
+
+a:active{
+	color: green;
+}
+
+
+a:visited{
+	
+}
+
+.container{
+	width:80%; /*you can also use px or like 500px,but when you dealing with container
+				better use percentage% like 80%*/
+	margin: auto;
+}
+
+/*to design the submit botton*/
+.button{
+	background-color: #333;
+	color: #fff;
+	padding-bottom: 10px 15px;
+	border:none;
+}
+
+.button:hover{
+	background-color: red;
+	color:white;
+}
+
+.clr{
+	clear:both;
+}
+
+
+.box-1{  /*this how you target the class that you name box-1 you put periob first*/
+	background-color: pink;
+
+
+	/*to add a border*/
+	border-right: 5px red solid;
+	border-left: 5px red solid;
+	border-top: 5px red solid;
+	border-bottom: 5px red solid;
+	/*you can do the short one,if you want the all border the same size*/
+	border: 5px red solid;
+
+	/*you can also target specific border*/
+	border-width: 3px; /*so after this all sides of border will be 3px*/
+	border-bottom-width: 10px; /*if you just wanna target the bottom*/
+	border-top-style:solid; /*after this the top border will bedotted, you can 
+								also put, dotted,dash,double, and others*/
+
+
+	/*padding*/
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-right: 20px;
+	padding-left: 20px;
+	/*but you could just use the shortcut*/
+	padding:20px;
+
+	/*the margin*/
+	margin-top:20px;
+	margin:20px 0; /*this one is example you just want the top and bottom,then 0 the rest*/
+
+
+}
+	/*if you want to you could zero the padding and margin for everything on the page
+	you just need to go to the every top the start line*/
+
+
+/*text formating*/
+/*to target the h1 from index html*/
+.box-1  h1{ /*this thing bissically saying that i wanna style any h1 within this class. its
+							not gonnastyle any h1 that is not in this clas*/
+	font-family: Tahoma;
+	font-weight: 800;
+	font-style: italic;
+	text-decoration: underline; 
+	text-transform: uppercase; /*this if you wnat all the letter to be upper or big letter*/
+	letter-spacing: 0.2em;
+	word-spacing: 1em;
+
+
+}	
+
+.box-2 { 
+
+	border: 3px dotted pink;
+	padding:20px;
+	margin:20px 0; /*this 20 for top and bottom and zero for left and right*/
+
+}
+
+
+.categories{
+	border: 1px pink solid;
+	padding: 10px;
+	border-radius: 15px; /*this border radius use if you want to have rounded corner*/
+
+}
+
+/*to align the text or put it in the h2 ot the category word in middle*/
+.categories h2{
+	text-align: center;
+}
+
+.categories ul{
+	padding: 0;
+	padding-left:20px;
+	list-style: square;
+	list-style: none;
+}
+
+.categories li{
+	padding-bottom: 6px;
+	border-bottom:dotted 1px #333;
+}
+
+.my-form{
+	padding:20px;
+}
+
+.my-form .form-group{
+	padding-bottom: 15px; /*to give space*/
+}
+
+.my-form label{
+	display:block;
+}
+
+.my-form input[type="text"], .my-form textarea{ /*this is for the submit botton and message*/
+	padding:8px;
+	width: 100%;
+}
+
+.block{
+	float:left;
+	width: 33.3%;
+	border:1px solid #ccc;
+	padding:10px;
+	box-sizing: border-box;
+
+}
+
+#main-block{
+	float: left;
+	width:70%;
+	padding: 15px;
+	box-sizing: border-box;
+}
+
+#sidebar{
+	float:right;
+	width:30%;
+	background-color: pink;
+	color:#fff;
+	padding:15px;
+	box-sizing: border-box;
+}
+
+
+.p-box{
+	width:800;
+	height:500px;
+	border: 1px solid pink;
+	margin-top: 30px;
+	position: relative; /*this position relative you need to put if you want your target 
+						just moving arund your target margin,not at the very top of everything on
+						your page*/
+	background-image: url('../images/lovee.jpg'); /*this is how to put images inbackground*/
+		;
+	background-repeat: no-repeat;
+	background-position:100px 200px;
+	background-position: center center;
+}
+
+
+.p-box h1{ /*this tomove the hello*/
+	position:absolute;
+	top:100px;
+	left:200px;
+}
+
+.p-box h2{ /*this to move the goodbye*/
+	position:absolute;
+	bottom:40px;
+	right: 100px; 
+
+}
+
+.fix-me{
+	position: fixed;
+	top: 400px;
+}
+
+/*this how to use sudo classes to target certain things*/
+.my-list li:first-child{ /*this fisrt-child mean target the first li list*/
+	background:pink;
+}
+
+.my-list li:last-child{  /*this for the last*/
+	background:red;
+}
+
+
+.my-list li:nth-child(5){ /*and this one if you wanna target spicific number, example you want 
+							the 5th */
+	background:blue;
+	
+}
+
+
+
+
+
+
